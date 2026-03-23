@@ -1,0 +1,81 @@
+/* Remove default selected background for dark theme (if you switch back) */
+.ant-menu-dark .ant-menu-item-selected {
+    background-color: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+          
+.ant-menu-dark .ant-menu-item-active {
+    background-color: transparent !important;
+}
+
+/* Amber color for selected menu items (light theme) */
+.ant-menu-light .ant-menu-item-selected {
+    background-color: #4698a8 !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+/* HORIZONTAL MENU - Selected state */
+.ant-menu-horizontal .ant-menu-item-selected {
+    background-color: transparent !important;
+    color: #4698a8 !important;
+    border-bottom: none !important;
+    font-weight: 600;
+}
+
+/* HORIZONTAL MENU - Hover effect */
+.ant-menu-horizontal .ant-menu-item:hover {
+    background-color: transparent !important;
+    color: #4698a8 !important;
+    border-bottom: none !important;
+}
+
+/* HORIZONTAL MENU - Active state */
+.ant-menu-horizontal .ant-menu-item-active {
+    background-color: transparent !important;
+    color: #4698a8 !important;
+    border-bottom: none !important;
+}
+
+/* Hover effect with lighter amber (for vertical menus) */
+.ant-menu-light .ant-menu-item:hover {
+    background-color: #4698a8 !important;
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+/* Active state */
+.ant-menu-light .ant-menu-item-active {
+    background-color: #4698a8 !important;
+    color: #ffffff !important;
+}
+
+/* Ensure text stays correct color on selected items */
+.ant-menu-light .ant-menu-item-selected a {
+    color: #ffffff !important;
+}
+
+.ant-menu-horizontal .ant-menu-item-selected a {
+    color: #4698a8 !important;
+}
+
+/* Default menu item styling */
+.ant-menu-light .ant-menu-item {
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+/* Remove default bottom border on horizontal menu */
+.ant-menu-horizontal {
+    border-bottom: none !important;
+}
+
+/* REMOVE THE AWKWARD INDICATOR LINE */
+.ant-menu-horizontal .ant-menu-item::after,
+.ant-menu-horizontal .ant-menu-item-selected::after {
+    border-bottom: none !important;
+    display: none !important;
+}
